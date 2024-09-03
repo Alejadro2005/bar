@@ -1,6 +1,7 @@
 import json
 from typing import Dict
 from Modelos.pedido import Pedido
+from Modelos.factura import Factura
 from Gestores.gestor_inventario import GestorInventario
 from Gestores.gestor_mesas import GestorMesas
 
@@ -31,5 +32,15 @@ class GestorPedidos:
             for pedido_data in datos:
                 mesa_numero = pedido_data['mesa']
                 productos = pedido_data['productos']
-                self.gestor_mesas.marcar_mesa_ocupada(mesa_numero)  # Marcar la mesa como ocupada
+                self.gestor_mesas.marcar_mesa_ocupada(mesa_numero)
                 self.crear_pedido(mesa_numero, productos)
+
+    def generar_factura(self, mesa_numero: int, propina: float) -> Factura:
+        if mesa_numero in self.pedidos:
+            pedido = self.pedidos[mesa_numero]
+            factura = Factura(pedido, propina)
+            return factura
+        else:
+            raise ValueError(f"No hay pedido registrado para la mesa {mesa_numero}.")
+
+

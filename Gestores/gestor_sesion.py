@@ -11,8 +11,11 @@ class GestorSesion:
 
     def cargar_meseros(self) -> None:
         # Agregar meseros por defecto
-        self.meseros.append(Mesero("mesero1"))
-        self.meseros.append(Mesero("mesero2"))
+        self.meseros.append(Mesero("mesero:juan"))
+        self.meseros.append(Mesero("mesero:laura"))
+        self.meseros.append(Mesero("mesero:diana"))
+        self.meseros.append(Mesero("mesero:jose"))
+        self.meseros.append(Mesero("mesero:alejo"))
 
     def autenticar(self, usuario: str, contraseña: str) -> bool:
         return usuario == self.admin_usuario and contraseña == self.admin_contraseña or usuario in [m.nombre for m in

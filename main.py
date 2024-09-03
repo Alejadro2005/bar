@@ -84,7 +84,7 @@ def main() -> None:
                         break
                     else:
                         print("Opción no válida.")
-            elif usuario.startswith("mesero"):
+            elif usuario.startswith("mesero:"):
                 while True:
                     print("\n--- Menú de Mesero ---")
                     print("1. Registrar pedido")
