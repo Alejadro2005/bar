@@ -1,0 +1,15 @@
+[
+    {
+        "mesa": 1,
+        "productos": {
+            "Cerveza": 2,
+            "Hamburguesa": 1
+        }
+    },
+    {
+        "mesa": 2,
+        "productos": {
+            "Cerveza": 1
+        }
+    }
+]

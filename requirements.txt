@@ -1,0 +1,3 @@
+# Aquí puedes agregar las dependencias necesarias, por ejemplo:
+# flask==2.0.1
+# sqlalchemy==1.4.22
