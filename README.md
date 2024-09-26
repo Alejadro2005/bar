@@ -14,7 +14,6 @@ Este proyecto es un sistema de gestión de pedidos para un bar que permite a los
 
 - Visualización de nombres de meseros: Consulta de los nombres de los meseros activos.
 
-- Visualización del historial de facturas: Revisión de todas las facturas generadas para los clientes.
 
 # Para Meseros
 - Registro de pedidos: Capacidad para registrar nuevos pedidos de clientes.
@@ -27,3 +26,6 @@ Este proyecto es un sistema de gestión de pedidos para un bar que permite a los
 
 - Gestión de Pedidos
 Los pedidos pueden ser precargados desde un archivo JSON, facilitando pruebas y simulaciones.
+
+# Diagrama de clases
+https://drive.google.com/file/d/1w7uz9AFxxYMa0AokV0iz3VP6i9MuFQi1/view?usp=sharing

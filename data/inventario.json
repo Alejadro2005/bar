@@ -1,16 +1,26 @@
 [
-  {
-    "nombre": "Cerveza",
-    "precio": 5.0,
-    "stock": 20,
-    "tipo": "bebida",
-    "tamaño": "500ml"
-  },
-  {
-    "nombre": "Hamburguesa",
-    "precio": 10.0,
-    "stock": 15,
-    "tipo": "plato",
-    "categoria": "comida rápida"
-  }
+    {
+        "nombre": "Cerveza",
+        "precio": 5.0,
+        "stock": 50,
+        "tipo": "bebida",
+        "categoria": "",
+        "tama\u00f1o": ""
+    },
+    {
+        "nombre": "Hamburguesa",
+        "precio": 10.0,
+        "stock": 40,
+        "tipo": "plato",
+        "categoria": "comida",
+        "tama\u00f1o": ""
+    },
+    {
+        "nombre": "Jugo de mango",
+        "precio": 10.0,
+        "stock": 40,
+        "tipo": "bebida",
+        "categoria": "",
+        "tama\u00f1o": ""
+    }
 ]

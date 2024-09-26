@@ -9,5 +9,23 @@ class Producto:
         self.categoria = categoria
         self.tamaño = tamaño
 
+    def to_dict(self) -> dict:
+        """Convierte el objeto Producto en un diccionario para la serialización a JSON."""
+        return {
+            "nombre": self.nombre,
+            "precio": self.precio,
+            "stock": self.stock,
+            "tipo": self.tipo,
+            "categoria": self.categoria,
+            "tamaño": self.tamaño
+        }
+
+    def __repr__(self) -> str:
+        """Devuelve una representación en cadena del objeto Producto."""
+        return (f"Producto(nombre={self.nombre}, precio={self.precio}, "
+                f"stock={self.stock}, tipo={self.tipo}, "
+                f"categoria={self.categoria}, tamaño={self.tamaño})")
+
     def __str__(self) -> str:
-        return f"{self.nombre} - ${self.precio} ({self.stock} en stock)"
+        """Devuelve una representación legible del producto."""
+        return f"{self.nombre} - ${self.precio:.2f} (Stock: {self.stock})"
